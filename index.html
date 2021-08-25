@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="./index.css" />
+      <link rel="stylesheet" href="./shared.css" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Ubuntu:wght@300&display=swap"
+         rel="stylesheet"
+      />
+
+      <link
+         rel="stylesheet"
+         href="./fontawesome-free-5.14.0-web/css/all.min.css"
+      />
+      <script src="./index.js" defer></script>
+      <title>Dynamo Skills</title>
+   </head>
+   <body>
+      <!-- Carousel section -->
+
+      <!-- Slideshow container -->
+      <!-- backdrop -->
+      <div class="backdrop"></div>
+
+      <!-- The html code for the sidebar -->
+      <div class="sidebar-container">
+         <div class="close-btn"><i class="fas fa-window-close"></i></div>
+         <div class="sidebar-grid">
+            <div class="sidebar-about">
+               <h1>About</h1>
+               <p><a href="#">History</a></p>
+               <p><a href="#">Administration</a></p>
+               <p><a href="#">DS at a glance</a></p>
+               <p><a href="#">The DS difference</a></p>
+            </div>
+            <div class="sidebar-courses">
+               <h1>Courses</h1>
+               <p><a href="#">History</a></p>
+               <p><a href="#">Administration</a></p>
+               <p><a href="#">DS at a glance</a></p>
+               <p><a href="#">The DS difference</a></p>
+            </div>
+            <div class="sidebar-blog">
+               <h1>Blog</h1>
+               <p><a href="#">History</a></p>
+               <p><a href="#">Administration</a></p>
+               <p><a href="#">DS at a glance</a></p>
+               <p><a href="#">The DS difference</a></p>
+            </div>
+         </div>
+      </div>
+      <!-- End of the html code for the sidebar -->
+
+      <div class="slideshow-container">
+         <!-- Full-width images with number and caption text -->
+         <div class="mySlides fade">
+            <img
+               src="./img/pexels-christina-morillo-1181233.jpg"
+               style="width: 100%"
+            />
+         </div>
+
+         <div class="mySlides fade">
+            <img
+               src="./img/pexels-august-de-richelieu-4261788.jpg"
+               style="width: 100%"
+            />
+         </div>
+
+         <div class="mySlides rel fade">
+            <img
+               src="./img/pexels-christina-morillo-1181622.jpg"
+               style="width: 100%"
+            />
+         </div>
+
+         <!-- End of slideshow images -->
+         <!-- Dynamo skills logo -->
+         <div class="main-logo">
+            <img src="./img/Dynamo Skills logo.png" alt="" />
+         </div>
+
+         <!-- Search button -->
+         <!-- <div class="main-search"><i class="fas fa-search"></i></div> -->
+         <input
+            class="main-search"
+            type="search"
+            name="search"
+            placeholder=""
+         />
+
+         <!-- The div for the carousel cover designs -->
+         <div class="slant-div">
+            <div class="login-hamburger">
+               <div class="heading-grid1"></div>
+               <div class="heading-grid2">
+                  <h4>Login</h4>
+                  <i class="fas fa-bars"></i>
+               </div>
+            </div>
+         </div>
+         <div class="hunger-div">
+            <h1>Hunger for programming, passion for coding</h1>
+            <p>
+               Aligning who you are with what you do is the heart of the dynamo
+               skill experience
+            </p>
+         </div>
+
+         <!-- The dots/circles -->
+         <div class="dots" style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+         </div>
+      </div>
+      <!-- End of carousel section -->
+      <!-- ********************************************************************* -->
+
+      <!-- Trending courses -->
+      <div class="trending-container">
+         <h1 class="trending-heading">Trending Courses</h1>
+         <ul class="courses">
+            <li><span>All</span></li>
+            <li>web developement</li>
+            <li>design UI/UX and marketing</li>
+            <li>fashion designing and photography</li>
+            <li>Catering, bakery and confectioneries</li>
+         </ul>
+         <div class="trending-card-container">
+            <div class="trending-card">
+               <div class="trending-card-head">
+                  <img
+                     src="./img/trending/pexels-christina-morillo-1181263.jpg"
+                     alt=""
+                  />
+                  <h4 class="trending-caption">Frontend Developement</h4>
+               </div>
+               <div class="trending-card-body">
+                  <h4>Average annual salary: N2,400,000</h4>
+                  <ul>
+                     <li><i class="fas fa-check-circle"></i>HTML and CSS</li>
+                     <li>
+                        <i class="fas fa-check-circle"></i>Responsive web
+                        development
+                     </li>
+                     <li>
+                        <i class="fas fa-check-circle"></i>JavaScript and JQUERY
+                     </li>
+                  </ul>
+                  <div class="trending-card-footer">
+                     <div class="inline">
+                        <span>online</span>
+                        <span class="room">classroom</span>
+                     </div>
+                     <a href="#" class="trending-btn">Enrol now</a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="trending-card">
+               <div class="trending-card-head">
+                  <img src="./img/trending/pexels-pixabay-265087.jpg" alt="" />
+                  <h4 class="trending-caption">Digital Marketing</h4>
+               </div>
+               <div class="trending-card-body">
+                  <h4>Average annual salary: N1,900,000</h4>
+                  <ul>
+                     <li>
+                        <i class="fas fa-check-circle"></i>digital marketing
+                        fundamentals
+                     </li>
+                     <li>
+                        <i class="fas fa-check-circle"></i>driving sales with
+                        paid ads
+                     </li>
+                     <li>
+                        <i class="fas fa-check-circle"></i>seo and content
+                        marketing
+                     </li>
+                  </ul>
+                  <div class="trending-card-footer">
+                     <div class="inline">
+                        <span>online</span>
+                        <span class="room">classroom</span>
+                     </div>
+                     <a href="#" class="trending-btn">Enrol now</a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="trending-card">
+               <div class="trending-card-head">
+                  <img
+                     src="./img/trending/pexels-fabian-wiktor-3471423.jpg"
+                     alt=""
+                  />
+                  <h4 class="trending-caption">UI/UX</h4>
+               </div>
+               <div class="trending-card-body">
+                  <h4>Average annual salary: N2,400,000</h4>
+                  <ul>
+                     <li><i class="fas fa-check-circle"></i>ux research</li>
+                     <li>
+                        <i class="fas fa-check-circle"></i>prototyping and
+                        wireframing
+                     </li>
+                     <li><i class="fas fa-check-circle"></i>Usability</li>
+                  </ul>
+                  <div class="trending-card-footer">
+                     <div class="inline">
+                        <span>online</span>
+                        <span class="room">classroom</span>
+                     </div>
+                     <a href="#" class="trending-btn">Enrol now</a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="trending-card">
+               <div class="trending-card-head">
+                  <img src="./img/trending/pexels-jéshoots-230743.jpg" alt="" />
+                  <h4 class="trending-caption">Pastry Making</h4>
+               </div>
+               <div class="trending-card-body">
+                  <h4>Average annual salary: N1,900,000</h4>
+                  <ul>
+                     <li>
+                        <i class="fas fa-check-circle"></i>safety and sanitation
+                     </li>
+                     <li>
+                        <i class="fas fa-check-circle"></i>pastry fundamentals
+                     </li>
+                     <li>
+                        <i class="fas fa-check-circle"></i>recipe modification
+                     </li>
+                  </ul>
+                  <div class="trending-card-footer">
+                     <div class="inline">
+                        <span>online</span>
+                        <span class="room">classroom</span>
+                     </div>
+                     <a href="#" class="trending-btn">Enrol now</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End of trending courses -->
+
+      <!-- Ready made jobs -->
+      <div class="ready-container">
+         <div class="ready-made-img">
+            <img src="./img/pexels-pixabay-207684.jpg" alt="" />
+         </div>
+         <div class="box2">
+            <div class="box1">
+               <h1>Ready made jobs</h1>
+               <p>
+                  Enroll in our 6-month long skills program for the best start
+                  your career can get. With a curriculum that aims to make you
+                  job ready and a token of N1,000,000 you are sure to get your
+                  dream job right after your program with us.
+               </p>
+               <a href="#">Learn More</a>
+            </div>
+         </div>
+      </div>
+      <!-- End of ready made jobs -->
+
+      <!-- ************************************************************** -->
+      <!-- Watch Kate's story -->
+      <div class="watch-container">
+         <h1>Watch Kate's Story</h1>
+         <div class="story-container">
+            <div class="video">
+               <video src="./img/2. What is CSS.mp4" controls></video>
+            </div>
+            <div class="watch-text">
+               <h1>
+                  <span>Transform</span> Your Life With The Help Of Our Courses
+               </h1>
+               <p>
+                  Kate was able to launch a new carrier and land her dream job
+                  right after taking courses on Dynamo Skills. Don’t you think
+                  you deserve this and more?
+               </p>
+            </div>
+         </div>
+      </div>
+      <!-- End of watch Kate's story -->
+
+      <!-- ***************************************************** -->
+      <!-- Real stories section -->
+      <div class="stories-container">
+         <h1>Real Stories</h1>
+         <div class="stories-grid">
+            <div class="stories-img-container">
+               <img
+                  src="./img/stories2/pexels-oladimeji-ajegbile-3556533.jpg"
+                  alt=""
+               />
+               <h5>Charles kinston</h5>
+               <div class="arrow">
+                  <i class="fas fa-arrow-right"></i><spa>Read Story</spa>
+               </div>
+               <div class="real-overlay">
+                  <h1>Charles Kingston</h1>
+                  <p>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Ad, consequuntur
+                  </p>
+               </div>
+            </div>
+            <div class="stories-img-container">
+               <img src="./img/stories2/pexels-sound-on-3760707.jpg" alt="" />
+               <h5>Charles kinston</h5>
+               <div class="arrow">
+                  <i class="fas fa-arrow-right"></i><spa>Read Story</spa>
+               </div>
+               <div class="real-overlay">
+                  <h1>Charles Kingston</h1>
+                  <p>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Ad, consequuntur
+                  </p>
+               </div>
+            </div>
+            <div class="stories-img-container">
+               <img
+                  src="./img/stories2/pexels-guilherme-almeida-1858175.jpg"
+                  alt=""
+               />
+               <h5>Charles kinston</h5>
+               <div class="arrow">
+                  <i class="fas fa-arrow-right"></i><spa>Read Story</spa>
+               </div>
+               <div class="real-overlay">
+                  <h1>Charles Kingston</h1>
+                  <p>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Ad, consequuntur
+                  </p>
+               </div>
+            </div>
+            <div class="stories-img-container">
+               <img src="./img/stories2/pexels-athena-2180892.jpg" alt="" />
+               <h5>Charles kinston</h5>
+               <div class="arrow">
+                  <i class="fas fa-arrow-right"></i><spa>Read Story</spa>
+               </div>
+               <div class="real-overlay">
+                  <h1>Charles Kingston</h1>
+                  <p>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Ad, consequuntur
+                  </p>
+               </div>
+            </div>
+            <div class="stories-img-container">
+               <img
+                  src="./img/stories2/pexels-jeffrey-paa-kwesi-opare-2734952.jpg"
+                  alt=""
+               />
+               <h5>Charles kinston</h5>
+               <div class="arrow">
+                  <i class="fas fa-arrow-right"></i><spa>Read Story</spa>
+               </div>
+               <div class="real-overlay">
+                  <h1>Charles Kingston</h1>
+                  <p>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Ad, consequuntur
+                  </p>
+               </div>
+            </div>
+            <div class="stories-img-container">
+               <img src="./img/stories2/pexels-kam-pratt-3254057.jpg" alt="" />
+               <h5>Charles kinston</h5>
+               <div class="arrow">
+                  <i class="fas fa-arrow-right"></i><spa>Read Story</spa>
+               </div>
+               <div class="real-overlay">
+                  <h1>Charles Kingston</h1>
+                  <p>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Ad, consequuntur
+                  </p>
+               </div>
+            </div>
+            <div class="stories-img-container">
+               <img
+                  src="./img/stories2/pexels-luis-quintero-1408196.jpg"
+                  alt=""
+               />
+               <h5>Charles kinston</h5>
+               <div class="arrow">
+                  <i class="fas fa-arrow-right"></i><spa>Read Story</spa>
+               </div>
+               <div class="real-overlay">
+                  <h1>Charles Kingston</h1>
+                  <p>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Ad, consequuntur
+                  </p>
+               </div>
+            </div>
+            <div class="stories-img-container">
+               <img src="./img/stories2/pexels-sound-on-3760946.jpg" alt="" />
+               <h5>Charles kinston</h5>
+               <div class="arrow">
+                  <i class="fas fa-arrow-right"></i><spa>Read Story</spa>
+               </div>
+               <div class="real-overlay">
+                  <h1>Charles Kingston</h1>
+                  <p>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Ad, consequuntur
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End of real stories section -->
+
+      <!-- Our cutting edge section -->
+      <div class="cutting-edge-container">
+         <h1>Our cutting edge</h1>
+         <div class="cutting-edge-grid">
+            <div class="cutting-edge-card">
+               <p><i class="fas fa-infinity"></i></p>
+               <h4>Flexibility</h4>
+               <p class="cutting-edge-text">
+                  Our courses are self-paced, online and on-site. You get to
+                  pick which one best suits you.
+               </p>
+            </div>
+            <div class="cutting-edge-card">
+               <p><i class="fas fa-book-open"></i></p>
+               <h4>Project-Based</h4>
+               <p class="cutting-edge-text">
+                  Because our courses are designed to be project-based, you will
+                  put the skills you are learning into action right away.
+               </p>
+            </div>
+            <div class="cutting-edge-card">
+               <p><i class="fas fa-chalkboard-teacher"></i></p>
+               <h4>Mentor-led</h4>
+               <p class="cutting-edge-text">
+                  Our seasoned instructors will always be there to hold your
+                  hand and guide you throughout your journey with us.
+               </p>
+            </div>
+         </div>
+      </div>
+      <!-- End of our cutting edge section -->
+
+      <!-- Our partners section -->
+      <div class="partners-container">
+         <h1>Our partners</h1>
+         <div class="partners-logo-container">
+            <div><i class="fab fa-medium"></i></div>
+            <div><i class="fab fa-amazon"></i></div>
+            <div><i class="fab fa-behance"></i></div>
+            <div><i class="fab fa-slack"></i></div>
+            <div><i class="fab fa-apple"></i></div>
+            <div><i class="fab fa-digg"></i></div>
+         </div>
+      </div>
+      <!-- End of our partners section -->
+
+      <!-- Start of the footer -->
+      <div class="main-footer">
+         <div class="footer-container">
+            <div class="footer-logo">
+               <img src="./img/Dynamo Skills logo.png" alt="" />
+            </div>
+            <div class="footer-form">
+               <h1>Get the latest</h1>
+               <form action="">
+                  <input type="text" placeholder="First Name" />
+                  <input type="text" placeholder="Last Name" />
+                  <input type="email" placeholder="Email Address" />
+                  <a href="#" class="footer-form-btn">Submit</a>
+               </form>
+            </div>
+            <div class="footer-enquiry">
+               <h4>General Enquiry</h4>
+               <h4>CONTACT@DYNAMOSKILLS.COM</h4>
+               <div class="social-icons">
+                  <i class="fab fa-facebook"></i>
+                  <i class="fab fa-instagram"></i>
+                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-youtube"></i>
+               </div>
+            </div>
+         </div>
+         <div class="footer-copyright">
+            <a href="#">Terms of service</a>
+            <a href="#">Privacy Policy</a>
+            <p>&copy;2020 All Rights Reserved</p>
+         </div>
+      </div>
+      <!-- End of the footer -->
+   </body>
+</html>

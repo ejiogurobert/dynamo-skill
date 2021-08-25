@@ -1,0 +1,339 @@
+/* The footer styles */
+
+.main-footer {
+   background: #355660;
+   padding-top: 4rem;
+}
+.footer-container {
+   display: grid;
+   grid-template-columns: 1fr 2fr 2fr;
+}
+.footer-logo {
+   max-width: 29%;
+   min-width: 121px;
+   padding: 0 1rem;
+   height: 8rem;
+   text-align: center;
+   font-size: 1.4rem;
+   margin: 0 11%;
+   padding-top: 3px;
+}
+.footer-logo img {
+   width: 100%;
+   min-width: 124px;
+}
+.footer-form h1 {
+   text-align: center;
+   color: white;
+   padding-bottom: 1rem;
+   text-transform: uppercase;
+   font-size: 1.3rem;
+}
+.footer-form form {
+   font-family: "Ubuntu", sans-serif;
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-gap: 1rem;
+}
+.footer-form form input {
+   background: #355660;
+   color: white;
+   border-bottom: 1px solid white;
+}
+
+::placeholder {
+   color: white;
+   text-transform: uppercase;
+   font-size: 1rem;
+   font-style: italic;
+   text-transform: capitalize;
+}
+.footer-form-btn {
+   text-decoration: none;
+   text-transform: uppercase;
+   font-weight: bold;
+   padding: 0.4rem 2rem;
+   background: white;
+   color: #355660;
+   margin-top: 1rem;
+   margin-right: 2rem;
+   justify-self: center;
+   transition: all 0.8s;
+}
+.footer-form-btn:hover {
+   background: #ffe009;
+   color: #355660;
+}
+
+.footer-form form input {
+   max-width: 37rem;
+   padding: 0.7rem;
+   width: 50%;
+   margin: 0 auto;
+   transition: all 0.4s ease-in;
+}
+
+/* .footer-form form input::before {
+   content: "where are you";
+   color: yellow;
+   width: 2rem;
+   height: 2rem;
+   border: 2px solid white;
+   background: yellow;
+} */
+
+.footer-form form input:focus {
+   outline: white;
+   border: 2px solid #fde74c;
+   border-radius: 4px;
+}
+
+/* .footer-enquiry .social-icons {
+   display: flex;
+   width: 80%;
+   text-align: right;
+   flex-direction: column;
+   align-items: end;
+   margin-left: 70%;
+   text-align: center;
+} */
+
+.footer-enquiry .social-icons {
+   display: flex;
+   width: 80%;
+   text-align: right;
+   flex-direction: column;
+   align-items: end;
+   margin-left: 20%;
+   text-align: center;
+}
+
+.footer-enquiry h4 {
+   color: white;
+   text-align: center;
+   font-size: 1.3rem;
+   font-family: "Montserrat", sans-serif;
+   text-transform: uppercase;
+}
+
+/* .footer-enquiry .social-icons i {
+   font-size: 1.8rem;
+   padding: 1rem;
+   color: white;
+   text-align: right;
+   margin-right: 2rem;
+} */
+
+.footer-enquiry .social-icons i {
+   font-size: 1.8rem;
+   padding: 1rem;
+   color: white;
+   text-align: right;
+   margin-left: auto;
+   margin-right: 5rem;
+   cursor: pointer;
+   transition: all 0.5s ease-in-out;
+}
+
+.footer-enquiry .social-icons i:hover {
+   color: #fde74c;
+}
+
+.footer-copyright {
+   width: 45%;
+   padding-bottom: 2rem;
+   margin-left: 1rem;
+   display: flex;
+   justify-content: space-evenly;
+   text-transform: capitalize;
+}
+.footer-copyright a {
+   text-decoration: none;
+   color: white;
+}
+.footer-copyright p {
+   color: white;
+}
+.footer-copyright a:hover {
+   color: #fde74c;
+}
+@media (max-width: 800px) {
+   .footer-container {
+      grid-template-columns: 1fr;
+   }
+   .footer-enquiry .social-icons {
+      margin: 0 auto;
+   }
+   .footer-enquiry .social-icons i {
+      font-size: 1.8rem;
+      padding: 1rem;
+      color: white;
+      margin: auto;
+   }
+   .footer-enquiry h4 {
+      font-size: 1rem;
+      margin-top: 1rem;
+   }
+   .footer-form-btn {
+      margin: 2rem 0 0.9rem 0;
+   }
+   .footer-copyright {
+      width: 100%;
+      margin: 0;
+      text-align: center;
+   }
+   .footer-logo {
+      margin: 0 auto 3rem;
+      padding: 0;
+   }
+}
+
+/* End of the footer styles */
+
+/* backdrop and sidebar styles */
+.backdrop {
+   position: fixed;
+   display: none;
+   top: 0;
+   left: 0;
+   z-index: 25;
+   width: 100vw;
+   height: 100vh;
+   background: rgba(0, 0, 0, 0.5);
+}
+.sidebar-container {
+   /* display: none; */
+   width: 0;
+   height: 100vh;
+   position: fixed;
+   top: 0;
+   right: 0;
+   background: #355660;
+   overflow-x: hidden;
+   z-index: 30;
+   transition: all 0.7s linear;
+   /* transition: 0.5s; */
+}
+
+/* .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+} */
+
+/* .hidden {
+   display: none;
+   opacity: 0;
+} */
+
+.sidebar-grid {
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-gap: 2rem;
+   margin: auto;
+   padding: 1.3rem;
+   font-family: "Montserrat", sans-serif;
+}
+.sidebar-grid h1 {
+   color: #ffe009;
+   font-size: 1rem;
+   padding-bottom: 0.5rem;
+   text-transform: uppercase;
+}
+.sidebar-grid a {
+   font-size: 0.8rem;
+   color: white;
+   padding: 0.2rem 0;
+   text-decoration: none;
+}
+.sidebar-grid a:hover {
+   color: #ffe009;
+}
+.close-btn i {
+   font-size: 2.7rem;
+   width: 100%;
+   color: yellow;
+   text-align: right;
+   margin: 1rem 0 0 0;
+   padding: 0 1rem;
+   cursor: pointer;
+}
+@media (min-width: 600px) {
+   .sidebar-grid h1 {
+      font-size: 1.4rem;
+   }
+   .sidebar-grid a {
+      font-size: 1.1rem;
+      color: white;
+      padding: 0.2rem 0;
+      text-decoration: none;
+   }
+   .sidebar-grid {
+      padding: 2rem;
+   }
+}
+
+/* end of backdrop and sidebar styles */
+
+/* Search styles */
+.main-search {
+   position: absolute;
+   cursor: pointer;
+   top: 1rem;
+   left: 5%;
+   color: white;
+}
+
+.main-search {
+   width: 4px;
+   height: 28px;
+   border: 2px solid #fde74c;
+   color: #355660;
+   border-radius: 4px;
+   font-size: 10px;
+   background: url(./img/search-icon-png-9969.png);
+   background-position: 8px 4px;
+   background-size: 20px 20px;
+   background-repeat: no-repeat;
+   background-color: white;
+   padding: 12px 0 12px 39px;
+   -webkit-transition: width 0.4s ease-in-out;
+   transition: width 0.7s ease-in-out;
+}
+input[type="search"]:focus {
+   width: 30%;
+   border: 1px solid #355660;
+   outline: none;
+}
+
+@media (min-width: 700px) {
+   input[type="search"] {
+      /* .main-search { */
+      width: 40px;
+      height: 40px;
+      border: 2px solid #fde74c;
+      color: #355660;
+      border-radius: 4px;
+      font-size: 14px;
+      background: url("./img/search-icon-png-9969.png");
+      background-position: 15px 10px;
+      background-size: 20px 20px;
+      background-repeat: no-repeat;
+      background-color: white;
+      padding: 12px 10px 12px 39px;
+      -webkit-transition: width 0.4s ease-in-out;
+      transition: width 0.7s ease-in-out;
+   }
+
+   input[type="search"]:focus {
+      width: 19%;
+   }
+}
+
+/* End of search styles */
